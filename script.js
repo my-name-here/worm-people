@@ -62,7 +62,7 @@ function CharacterInfo(){
   else if (last_start=='Worm'){
     var name=''.concat((name),''.concat(' ',last_start ),choice(['bet','ford','en','er','ano','berg','son','sky','stein','ago','otti','ello','etti']))}
   else if (last_start=='Wham'){
-    var name=''.concat((name),''.concat(' ',last_start ),choice(['bet','ford','en','er','ano','berg','son','sky','stein','ago','otti','ello','etti','enheim','ton']))}
+    var name=''.concat((name),''.concat(' ',last_start ),choice(['bet','ford','en','er','berg','son','sky','stein','enheim','ton']))}
   else{
     var name=''.concat(name,''.concat(' ',last_start),choice(last_name_endings))}
   var x=''.concat(x,` name: ${name} \n `)

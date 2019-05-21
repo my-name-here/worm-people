@@ -10,7 +10,7 @@ h1 {
   font-style: italic;
   color: #373fff;
 }
-#rcorners1 {
+.rcorners1 {
   border-radius: 25px;
   background: #616161;
   padding: 20px; 

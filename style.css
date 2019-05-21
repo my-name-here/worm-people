@@ -11,6 +11,8 @@ h1 {
   color: #373fff;
 }
 .rcorners1 {
+  text-align: center;
+  text-color=#ffffff
   border-radius: 25px;
   background: #616161;
   padding: 20px; 

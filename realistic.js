@@ -12,30 +12,29 @@ function gen_character(){
   var character_description=[];
 
   var has_hat=choice([true,false])
-  var hat=['none','none','none','none','fancy hat with feather','mysterious man hat','top hat','party hat','box painted to look like worm bot head','rounded hat with brim','traffic cone'];
-  var hair=['lots of short strands','like harfeld','three strands','like dirt','like finnrietta','three strands on each side','spiky hair sticking up','spelling special','red stripes','multicolored'];
+  var hat=['none','none','none','none','fancy hat with feather','mysterious man hat','top hat','party hat','rounded hat with brim'];
+  var hair=['lots of short strands','like harfeld','three strands','like dirt','like finnrietta','three strands on each side','spiky hair sticking up'];
   if (has_hat){
     character_description.push( `hat: ${choice(hat)} `)}
   if ( has_hat =false){
     character_description.push( `hair: ${choice(hair)}`)}
-  var shirt=['none','none','none','none','none','none','none','none','none','none','none','none','fancy suit','crisscross blue and black','like harfelds','mysterious man shirt','red shirt saying wham in comic book spiky text bubble','green shirt with fuuny slogan','lab coat','blank shirt that says dac-corp','purple shirt','red coat'];
+  var shirt=['none','none','none','none','none','none','none','fancy suit','crisscross blue and black','like harfelds','mysterious man shirt','red shirt saying wham in comic book spiky text bubble','green shirt with fuuny slogan','lab coat','blank shirt that says dac-corp','purple shirt','red coat'];
   character_description.push(`shirt: ${choice(shirt)}`)
   var both_hands_used=choice([true,false])
   if (both_hands_used=false){
-    var hand1=['three pronged trident','none','none','none','none','none','none','none','none','none','none','spoon','invitation','plate of cake','pen','jar','flask','ajax lives sign','clipboard','blakeford sign','piece of paper saying date','none','mysterious man hat','stick soummoning green lightning','sword','briefcase','hook'];
+    var hand1=['none','none','none','spoon','pen','jar','flask','ajax lives sign','clipboard','blakeford sign','none','mysterious man hat','sword','briefcase'];
     character_description.push(`hand1: ${choice(hand1)}`)
-    var hand2=['three pronged trident','none','none','none','none','none','none','none','none','none','none','spoon','invitation','plate of cake','pen','jar','flask','ajax lives sign','clipboard','blakeford sign','piece of paper saying date','none','mysterious man hat','stick soummoning green lightning','sword','briefcase','hook'];
-    character_description.push(`hand2: ${choice(hand2)}`)}
+    var hand2=['none','none','none','spoon','pen','jar','flask','ajax lives sign','clipboard','blakeford sign','none','mysterious man hat','sword','briefcase'];    character_description.push(`hand2: ${choice(hand2)}`)}
   else{
-    var hands=['none','none','none','none','none','none','none','none','none','none','none','none','none','none','none','clarinet','drumsticks','wormberts walker','guitar','cello'];
+    var hands=['none'];
     character_description.push(`hands: ${choice(hands)}`)}
-  var eyes=['red square glasses','green ovals', 'black square glasses','blue squares','orange circles','white ovals with dot surrounded by round glasses','one looking up other looking down','eye patch on one eye','black square glasses','circles with dot at center','circles with dot at center','circles with dot at center','circles with dot at center','circles with dot at center','circles with dot at center','circles with dot at center','circles with dot at center','circles with dot at center','circles with dot at center','circles with dot at center','circles with dot at center','circles with dot at center','circles with dot at center','circles with dot at center','circles with dot at center','circles with dot at center','circles with dot at center','circles with dot at center','circles with dot at center','circles with dot at center'];
+  var eyes=['red square glasses','green ovals', 'black square glasses','blue squares','white ovals with dot surrounded by round glasses','black square glasses','circles with dot at center','circles with dot at center'];
   character_description.push(`eyes: ${choice(eyes)}`)
-  var mouth=['rectangle with grid pattern','spiky teeth','rounded teeth full set','rounded teeth full set','rounded teeth full set','rounded teeth full set','rounded teeth full set','rounded teeth full set','rounded teeth full set','rounded teeth full set','rounded teeth full set','rounded teeth full set','rounded teeth full set','rounded teeth full set','rounded teeth  some missing','oval with grid','closed with top one side going up','confused'];
+  var mouth=['rectangle with grid pattern','rounded teeth full set','rounded teeth full set','rounded teeth full set','rounded teeth  some missing','oval with grid'];
   character_description.push(`mouth: ${choice(mouth)}`)
   var nose=['none','none','none','none','none','none','none','none','none','none','none','none','none','none','none','none','curvy ending in sharp point','just nostrils'];
   character_description.push(`nose: ${choice( nose)}`)
-  var facial_hair=['none','none','none','none','none','none','none','none','none','none','black 2 part mustache','one part mustache','gray beard','chainmail beard','dots','thick mustache'];
+  var facial_hair=['none','none','none','none','none','none','none','none','none','none','black 2 part mustache','one part mustache','gray beard','thick mustache'];
   character_description.push(`facial hair: ${choice(facial_hair)}`)
   var colors_for_face=[];
   var i=0;
